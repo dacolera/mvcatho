@@ -4,6 +4,9 @@ class TesteController extends ControllerAbstract
 {
 	public function comprimentar()
 	{
-		$this->view('comprimentar');
+		$model = new Pessoas();
+		$dados['cargo'] = $model->getCargoPorPessoa('burgo');
+
+		$this->view('comprimentar', $dados);
 	}
 }
