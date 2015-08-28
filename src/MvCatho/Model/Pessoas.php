@@ -1,5 +1,7 @@
 <?php
 
+namespace MvCatho\Model;
+
 class Pessoas 
 {
 	private $devel = array(
